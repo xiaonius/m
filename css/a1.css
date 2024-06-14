@@ -642,7 +642,6 @@ body {
     height: 100%;
     z-index: 1;
 }
-<!--壁纸-->
 .bgo{
 	background: url(https://api.aixiaowai.cn/api/api.php); 
     background-size: cover;
