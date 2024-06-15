@@ -972,5 +972,53 @@ width: 35%;
 .icon-ziyuan:before {
   content: "\e601";
 }
+body, html {  
+    height: 100%;  
+    margin: 0;  
+    display: flex;  
+    align-items: center; /* 垂直居中 */  
+    justify-content: center; /* 水平居中 */  
+}  
+  
+.center-container {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 1000%;  
+    display: flex;  
+    align-items: center; /* 垂直居中 */  
+    justify-content: center; /* 水平居中 */  
+    pointer-events: none; /* 使容器本身不响应点击事件 */  
+}  
+  
+.floating-alert {  
+    background-color: #f44336;  
+    color: white;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
+    z-index: 9999;  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    pointer-events: auto; /* 公告提示需要响应点击事件 */  
+    /* 添加透明度渐变效果 */  
+    transition: opacity 1s ease-in-out;  
+}  
+  
+.close-btn {  
+    background-color: transparent;  
+    border: none;  
+    color: white;  
+    font-size: 1.2em;  
+    cursor: pointer;  
+}  
+  
+/* 公告提示隐藏时的样式 */  
+.floating-alert.hidden {  
+    opacity: 0;  
+    pointer-events: none; /* 不响应鼠标事件 */  
+}
 
 
