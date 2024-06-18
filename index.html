@@ -24,6 +24,48 @@
   <script src="js/a2jquery1.min.js"></script> 
  </head> 
  <body> 
+<style>  
+    body {  
+        /* 初始背景设置为透明，等待JavaScript设置背景图片 */  
+        background-image: none;  
+        background-repeat: no-repeat;  
+        background-position: center center;  
+        background-attachment: fixed;  
+        -webkit-background-size: cover;  
+        -moz-background-size: cover;  
+        -o-background-size: cover;  
+        background-size: cover;  
+        margin: 0;  
+        padding: 0;  
+    }  
+</style>  
+</head>  
+<body>  
+  
+<script>  
+// 预定义的壁纸URL列表  
+var wallpaperUrls = [  
+    'https://img.alicdn.com/imgextra/i1/2327995847/O1CN01F0FOhG1t3ylI0LUtK_!!2327995847.jpg',  
+    'https://img.alicdn.com/imgextra/i2/2327995847/O1CN01RMpX341t3ylJvwqMr_!!2327995847.jpg',  
+    'https://img.alicdn.com/imgextra/i2/2327995847/O1CN01qJZoVS1t3ylL5Tgh2_!!2327995847.jpg',  
+    'https://img.alicdn.com/imgextra/i2/2327995847/O1CN01QPixHV1t3ylJvwJ6U_!!2327995847.jpg',  
+    'https://img.alicdn.com/imgextra/i1/2327995847/O1CN018Cac8M1t3ylHymUcQ_!!2327995847.jpg',  
+
+
+
+    // ... 更多的壁纸URL  
+];  
+  
+// 从列表中随机选择一个URL  
+var randomIndex = Math.floor(Math.random() * wallpaperUrls.length);  
+var randomWallpaperUrl = wallpaperUrls[randomIndex];  
+  
+// 设置网页背景为随机选择的壁纸  
+document.body.style.backgroundImage = 'url(' + randomWallpaperUrl + ')';  
+</script>  
+  
+</body>  
+</html>
   <div id="menu">
    <i></i>
   </div> 
