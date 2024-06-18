@@ -352,7 +352,7 @@
 }
 #search {
 	width: 717px;
-	margin: 56px auto 14px;
+	margin: 0px auto 0px;/*搜索框上下空位占位*/
 	position: absolute;
 	z-index: 99;
 	top: 20%;
@@ -643,8 +643,9 @@ body {
     height: 100%;
     z-index: 1;
 }
+
 .bgo{
-	background: url(https://img.alicdn.com/imgextra/i3/2327995847/O1CN0198erMG1t3yY67Rnfv_!!2327995847.jpg); 
+	background: url(); 
     background-size: cover;
     filter: brightness(0.9);
     width: 100%;
@@ -762,14 +763,14 @@ a {
 
 .list {
     width: 337px;
-    padding: 0 40px;/*书签左右位置*/
+    padding: -1 40px;/*书签左右位置*/
     height: 104%;/*书签上下位置*/
     overflow: hidden;
     overflow-y: auto;
     position: absolute;
     right: 0px;
     z-index: 2000;
-    background: rgba(1,1,1,0.7);
+    background: rgba(1,1,1,0.3);/*书签背景阴影*/
     transition: 0.3s all linear;
 }
 .list.closed {
