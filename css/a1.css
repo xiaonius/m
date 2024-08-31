@@ -369,7 +369,7 @@ a {
 .list {
     width: 337px;
     padding: -1 40px;/*书签左右位置*/
-    height: 104%;/*书签上下位置*/
+    height: 100%;/*书签上下位置*/
     overflow: hidden;
     overflow-y: auto;
     position: absolute;
